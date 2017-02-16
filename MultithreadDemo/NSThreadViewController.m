@@ -54,6 +54,11 @@
     [thread start];
 }
 
+//第二种创建的方法
+-(void)createThreadTwo{
+
+}
+
 -(void)run:(id)obj{
     NSLog(@"打印携带的参数%@",obj);
     NSLog(@"currentThread --- %@",[NSThread currentThread]);
