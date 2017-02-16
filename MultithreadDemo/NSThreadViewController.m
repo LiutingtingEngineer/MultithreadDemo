@@ -44,13 +44,14 @@
    
     NSLog(@"main --- %@",[NSThread mainThread]);
     //第一种创建的方式
-    NSThread *thread = [[NSThread alloc]initWithTarget:self selector:@selector(run:) object:@"验证携带的方式"];
-    thread.name = @"newThread";
-    [thread start];
+    [self createThreadOne];
 }
 
 //NSThread有三种创建方式
--(void)createThread{
+-(void)createThreadOne{
+    NSThread *thread = [[NSThread alloc]initWithTarget:self selector:@selector(run:) object:@"验证携带的方式"];
+    thread.name = @"newThread";
+    [thread start];
 }
 
 -(void)run:(id)obj{
