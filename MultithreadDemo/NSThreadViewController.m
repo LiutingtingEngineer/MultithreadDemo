@@ -49,7 +49,7 @@
     [thread start];
 }
 
-
+//NSThread有三种创建方式
 
 -(void)run:(id)obj{
     NSLog(@"打印携带的参数%@",obj);
