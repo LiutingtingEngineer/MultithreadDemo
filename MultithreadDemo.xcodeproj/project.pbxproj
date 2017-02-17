@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E1101DD81E55D36400E99D8A /* NSThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1101DD71E55D36400E99D8A /* NSThreadViewController.xib */; };
+		E1101E331E56E08400E99D8A /* GCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1101E321E56E08400E99D8A /* GCDViewController.xib */; };
+		E1101E371E5734C800E99D8A /* CustomNSOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E1101E361E5734C800E99D8A /* CustomNSOperation.m */; };
+		E1101E391E573BC400E99D8A /* NSOpreationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1101E381E573BC400E99D8A /* NSOpreationViewController.xib */; };
 		E15F33271E55BD1B00C5A61B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E15F33261E55BD1B00C5A61B /* main.m */; };
 		E15F332A1E55BD1B00C5A61B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E15F33291E55BD1B00C5A61B /* AppDelegate.m */; };
 		E15F332D1E55BD1B00C5A61B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E15F332C1E55BD1B00C5A61B /* ViewController.m */; };
@@ -40,6 +43,11 @@
 
 /* Begin PBXFileReference section */
 		E1101DD71E55D36400E99D8A /* NSThreadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSThreadViewController.xib; sourceTree = "<group>"; };
+		E1101E321E56E08400E99D8A /* GCDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCDViewController.xib; sourceTree = "<group>"; };
+		E1101E351E5734C800E99D8A /* CustomNSOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNSOperation.h; sourceTree = "<group>"; };
+		E1101E361E5734C800E99D8A /* CustomNSOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNSOperation.m; sourceTree = "<group>"; };
+		E1101E381E573BC400E99D8A /* NSOpreationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSOpreationViewController.xib; sourceTree = "<group>"; };
+		E1101E3A1E573C2200E99D8A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E15F33221E55BD1B00C5A61B /* MultithreadDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultithreadDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15F33261E55BD1B00C5A61B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E15F33281E55BD1B00C5A61B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E1101E341E57349900E99D8A /* customOperation */ = {
+			isa = PBXGroup;
+			children = (
+				E1101E351E5734C800E99D8A /* CustomNSOperation.h */,
+				E1101E361E5734C800E99D8A /* CustomNSOperation.m */,
+			);
+			name = customOperation;
+			sourceTree = "<group>";
+		};
 		E15F33191E55BD1B00C5A61B = {
 			isa = PBXGroup;
 			children = (
@@ -112,7 +129,7 @@
 		E15F33241E55BD1B00C5A61B /* MultithreadDemo */ = {
 			isa = PBXGroup;
 			children = (
-				E15F33581E55C05D00C5A61B /* MultiThread */,
+				E15F33581E55C05D00C5A61B /* MultiThread初步知识 */,
 				E15F33281E55BD1B00C5A61B /* AppDelegate.h */,
 				E15F33291E55BD1B00C5A61B /* AppDelegate.m */,
 				E15F332B1E55BD1B00C5A61B /* ViewController.h */,
@@ -122,6 +139,7 @@
 				E15F33331E55BD1B00C5A61B /* LaunchScreen.storyboard */,
 				E15F33361E55BD1B00C5A61B /* Info.plist */,
 				E15F33251E55BD1B00C5A61B /* Supporting Files */,
+				E1101E3A1E573C2200E99D8A /* PrefixHeader.pch */,
 			);
 			path = MultithreadDemo;
 			sourceTree = "<group>";
@@ -152,18 +170,21 @@
 			path = MultithreadDemoUITests;
 			sourceTree = "<group>";
 		};
-		E15F33581E55C05D00C5A61B /* MultiThread */ = {
+		E15F33581E55C05D00C5A61B /* MultiThread初步知识 */ = {
 			isa = PBXGroup;
 			children = (
+				E1101E341E57349900E99D8A /* customOperation */,
 				E15F33621E55C33800C5A61B /* NSThreadViewController.h */,
 				E15F33631E55C33800C5A61B /* NSThreadViewController.m */,
 				E1101DD71E55D36400E99D8A /* NSThreadViewController.xib */,
 				E15F33651E55C34600C5A61B /* GCDViewController.h */,
 				E15F33661E55C34600C5A61B /* GCDViewController.m */,
+				E1101E321E56E08400E99D8A /* GCDViewController.xib */,
 				E15F33681E55C35800C5A61B /* NSOpreationViewController.h */,
 				E15F33691E55C35800C5A61B /* NSOpreationViewController.m */,
+				E1101E381E573BC400E99D8A /* NSOpreationViewController.xib */,
 			);
-			name = MultiThread;
+			name = "MultiThread初步知识";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +296,9 @@
 				E15F33351E55BD1B00C5A61B /* LaunchScreen.storyboard in Resources */,
 				E15F33321E55BD1B00C5A61B /* Assets.xcassets in Resources */,
 				E15F33301E55BD1B00C5A61B /* Main.storyboard in Resources */,
+				E1101E391E573BC400E99D8A /* NSOpreationViewController.xib in Resources */,
 				E1101DD81E55D36400E99D8A /* NSThreadViewController.xib in Resources */,
+				E1101E331E56E08400E99D8A /* GCDViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +327,7 @@
 				E15F332A1E55BD1B00C5A61B /* AppDelegate.m in Sources */,
 				E15F33271E55BD1B00C5A61B /* main.m in Sources */,
 				E15F33671E55C34600C5A61B /* GCDViewController.m in Sources */,
+				E1101E371E5734C800E99D8A /* CustomNSOperation.m in Sources */,
 				E15F33641E55C33800C5A61B /* NSThreadViewController.m in Sources */,
 				E15F336A1E55C35800C5A61B /* NSOpreationViewController.m in Sources */,
 			);
@@ -454,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MultithreadDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = MultithreadDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = liutingting.MultithreadDemo;
@@ -465,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MultithreadDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = MultithreadDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = liutingting.MultithreadDemo;

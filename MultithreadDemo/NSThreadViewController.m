@@ -8,8 +8,6 @@
 
 #import "NSThreadViewController.h"
 
-#define IMAGEURL   @"http://pic44.nipic.com/20140721/11624852_001107119409_2.jpg"
-
 @interface NSThreadViewController ()
 
 @property(nonatomic,strong)NSThread *thr1;

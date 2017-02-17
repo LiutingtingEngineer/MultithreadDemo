@@ -38,13 +38,13 @@
 }
 
 - (IBAction)GCD:(id)sender {
-    GCDViewController *gcd = [[GCDViewController alloc]init];
+    GCDViewController *gcd = [[GCDViewController alloc]initWithNibName:@"GCDViewController" bundle:nil];
     [self presentViewController:gcd animated:YES completion:^{
     }];
 }
 
 - (IBAction)NSOpreation:(id)sender {
-    NSOpreationViewController *opreation = [[NSOpreationViewController alloc]init];
+    NSOpreationViewController *opreation = [[NSOpreationViewController alloc]initWithNibName:@"NSOpreationViewController" bundle:nil];
     [self presentViewController:opreation animated:YES completion:^{
     }];
 }

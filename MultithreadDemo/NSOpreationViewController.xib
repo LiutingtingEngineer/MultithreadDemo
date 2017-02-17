@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NSOpreationViewController">
+            <connections>
+                <outlet property="imageView" destination="pCP-Dc-FOp" id="dQZ-ws-exr"/>
+                <outlet property="view" destination="iN0-l3-epB" id="i8w-qC-TYL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7f-iG-yyg">
+                    <rect key="frame" x="133" y="37" width="108" height="30"/>
+                    <state key="normal" title="远程图片的加载"/>
+                    <connections>
+                        <action selector="loadImage:" destination="-1" eventType="touchUpInside" id="Vmi-cv-esM"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pCP-Dc-FOp">
+                    <rect key="frame" x="0.0" y="121" width="375" height="546"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFu-qE-JmI">
+                    <rect key="frame" x="34" y="76" width="62" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="挂起队列"/>
+                    <connections>
+                        <action selector="suspended:" destination="-1" eventType="touchUpInside" id="42Q-C0-gaG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PpA-0I-rbL">
+                    <rect key="frame" x="125" y="76" width="62" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="取消队列"/>
+                    <connections>
+                        <action selector="cancleQUeue:" destination="-1" eventType="touchUpInside" id="HHu-Hq-feY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pCP-Dc-FOp" firstAttribute="top" secondItem="X7f-iG-yyg" secondAttribute="bottom" constant="54" id="DvL-rs-R90"/>
+                <constraint firstAttribute="bottom" secondItem="pCP-Dc-FOp" secondAttribute="bottom" id="GLu-rm-D7j"/>
+                <constraint firstItem="X7f-iG-yyg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="133" id="QJ2-n6-W3U"/>
+                <constraint firstItem="pCP-Dc-FOp" firstAttribute="top" secondItem="X7f-iG-yyg" secondAttribute="bottom" constant="54" id="SaE-Zv-equ"/>
+                <constraint firstItem="X7f-iG-yyg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="37" id="ehm-ck-QKJ"/>
+                <constraint firstAttribute="trailing" secondItem="pCP-Dc-FOp" secondAttribute="trailing" id="oEN-el-Mau"/>
+                <constraint firstAttribute="trailing" secondItem="X7f-iG-yyg" secondAttribute="trailing" constant="134" id="vCQ-2c-wTa"/>
+                <constraint firstItem="pCP-Dc-FOp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wcp-By-DA5"/>
+            </constraints>
+            <point key="canvasLocation" x="6.5" y="43.5"/>
+        </view>
+    </objects>
+</document>
