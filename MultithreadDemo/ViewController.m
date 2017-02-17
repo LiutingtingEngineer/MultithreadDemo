@@ -10,7 +10,7 @@
 #import "NSThreadViewController.h"
 #import "GCDViewController.h"
 #import "NSOpreationViewController.h"
-//http://pic44.nipic.com/20140721/11624852_001107119409_2.jpg
+
 
 @interface ViewController ()
 - (IBAction)NSThread:(id)sender;

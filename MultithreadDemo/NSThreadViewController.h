@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface NSThreadViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *loadImage;
+- (IBAction)loadImage:(id)sender;
 
 @end
